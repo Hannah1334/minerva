@@ -1,0 +1,656 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style type="text/css">
+body{
+background-color:#919191;
+background-image: url('https://i.imgur.com/sVLHgTL.png') !important; 
+background-repeat:repeat !important; 
+background-position:center !important; 
+}
+
+::-webkit-scrollbar {width: 4px; height: 4px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #7D7D7D;}
+
+#box1 {
+position:absolute;
+background-color:#AFAFAF;
+width:15%;
+height:50%;
+top:25%;
+left:34.5%;
+}
+
+#box2 {
+position:absolute;
+background-color:#AFAFAF;
+width:15%;
+height:50%;
+top:25%;
+left:50.5%;
+}
+
+#title1 {
+position:absolute;
+background-color:#CDCDCD;
+width:15%;
+height:9%;
+top:25%;
+left:34.5%;
+color:#666666;
+text-align:center;
+font-size:3.5vh;
+text-shadow: 2px 2px #FFFFFF;
+font-family: 'Lobster', cursive;
+line-height:2;
+}
+
+#title2 {
+position:absolute;
+background-color:#CDCDCD;
+width:15%;
+height:9%;
+top:25%;
+left:50.5%;
+color:#666666;
+text-align:center;
+font-size:3.5vh;
+text-shadow: 2px 2px #FFFFFF;
+font-family: 'Lobster', cursive;
+line-height:2;
+}
+
+#line1 {
+position:absolute;
+background-color:#7D7D7D;
+width:15%;
+height:1%;
+top:33.5%;
+left:34.5%;
+}
+
+#line2 {
+position:absolute;
+background-color:#7D7D7D;
+width:15%;
+height:1%;
+top:33.5%;
+left:50.5%;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:35%;
+color:#FFFFFF;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:38%;
+color:#FFFFFF;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:41%;
+color:#FFFFFF;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:44%;
+color:#FFFFFF;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:47%;
+color:#FFFFFF;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:51%;
+color:#000000;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox7 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:54%;
+color:#000000;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox8 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:57%;
+color:#000000;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox9 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:60%;
+color:#000000;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox10 {
+position:absolute;
+background-color:#7D7D7D;
+width:2%;
+height:4%;
+top:32%;
+left:63%;
+color:#000000;
+text-transform:uppercase;
+font-size:1vh;
+text-align:center;
+line-height:4;
+font-family: 'PT Sans Narrow', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover {
+background-color:#9B9B9B;
+color:#000000;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg) ;
+-ms-transform: rotate(360deg);
+transform: rotate(360deg) ;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6:hover,#tabbox7:hover,#tabbox8:hover,#tabbox9:hover,#tabbox10:hover {
+background-color:#9B9B9B;
+color:#FFFFFF;
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg) ;
+-ms-transform: rotate(360deg);
+transform: rotate(360deg) ;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1holder {
+position:absolute;
+background-color:#CDCDCD;
+width:9%;
+height:18%;
+top:38%;
+left:37.5%;
+}
+
+#pic2holder {
+position:absolute;
+background-color:#CDCDCD;
+width:9%;
+height:18%;
+top:38%;
+left:53.5%;
+}
+
+#pic1 {
+position:absolute;
+background-color:#FFFFFF;
+width:8%;
+height:16%;
+top:39%;
+left:38%;
+}
+
+#pic2 {
+position:absolute;
+background-color:#FFFFFF;
+width:8%;
+height:16%;
+top:39%;
+left:54%;
+}
+
+#content1 {
+position:absolute;
+background-color:#CDCDCD;
+padding:1%;
+overflow:auto;
+width:13%;
+height:12.2%;
+top:58.5%;
+left:34.5%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Abel', sans-serif;
+}
+
+#content2 {
+position:absolute;
+background-color:#CDCDCD;
+padding:1%;
+overflow:auto;
+width:13%;
+height:12.2%;
+top:58.5%;
+left:50.5%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Abel', sans-serif;
+}
+
+.tabs {
+display:block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27,#tab28,#tab29,#tab30 {
+display: none;
+}
+
+a {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#FFFFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+i {
+color:#333333;
+}
+
+b {
+color:#7D7D7D;
+text-transform:uppercase;
+font-family: 'PT Sans Narrow', sans-serif;
+letter-spacing:2px;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Abel|Lobster|PT+Sans+Narrow" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('title1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('title2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('pic1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation5(id) {document.getElementById('pic2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="title1">
+Twin Sister
+</div>
+<div id="title2">
+Twin Brother
+</div>
+<div id="line1"></div>
+<div id="line2"></div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation2 ('tab2');changeNavigation4 ('tab3')">Basics</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation2 ('tab5');changeNavigation4 ('tab6')">Details</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation2 ('tab8');changeNavigation4 ('tab9')">History</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab10');changeNavigation2 ('tab11');changeNavigation4 ('tab12')">Racials</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation2 ('tab14');changeNavigation4 ('tab15')">Magic</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation1 ('tab16');changeNavigation3 ('tab17');changeNavigation5 ('tab18')">Basics</span>
+</div>
+<div id="tabbox7">
+<span class="tabs" onClick="changeNavigation1 ('tab19');changeNavigation3 ('tab20');changeNavigation5 ('tab21')">Details</span>
+</div>
+<div id="tabbox8">
+<span class="tabs" onClick="changeNavigation1 ('tab22');changeNavigation3 ('tab23');changeNavigation5 ('tab24')">History</span>
+</div>
+<div id="tabbox9">
+<span class="tabs" onClick="changeNavigation1 ('tab25');changeNavigation3 ('tab26');changeNavigation5 ('tab27')">Racials</span>
+</div>
+<div id="tabbox10">
+<span class="tabs" onClick="changeNavigation1 ('tab28');changeNavigation3 ('tab29');changeNavigation5 ('tab30')">Magic</span>
+</div>
+<div id="pic1holder"></div>
+<div id="pic2holder"></div>
+<div id="pic1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/FLafvki.png"/>
+</div>
+<div id="pic2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/olkYqD5.png"/>
+</div>
+<div id="content1">
+<b>Name:</b> Minerva O'Connor<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Faerie<br>
+<b>Race:</b> Bloodborn Sidhe<br>
+<b>Title:</b> The Green Eyed Owl<br>
+<b>Occupation:</b> {Redacted} of Falias
+</div>
+<div id="content2">
+<b>Name:</b> Vulcan O'Connor<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Faerie<br>
+<b>Race:</b> Bloodborn Sidhe<br>
+<b>Title:</b> The Green Eyed Raven<br>
+<b>Occupation:</b> {Redacted} of Falias
+</div>
+
+<div id="tab1">
+<b>Name:</b> Minerva O'Connor<br>
+<b>Gender:</b> Female<br>
+<b>Species:</b> Faerie<br>
+<b>Race:</b> Bloodborn Sidhe<br>
+<b>Title:</b> The Green Eyed Owl<br>
+<b>Occupation:</b> {Redacted} of Falias
+</div>
+<div id="tab2">
+Twin Sister
+</div>
+<div id="tab3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/FLafvki.png"/>
+</div>
+
+<div id="tab4">
+<b>Appearance:</b><br>
+Italian heritage is very prominent in her appearance. Minerva’s complexion is a dark olive tan, which appears deeper in tone than it actually is thanks to the accent provided by long locks of pitch black hair. She bears the signature glowing emerald eyes of her O’Connor blood, causing her to take after her father a lot in appearance. The young princess’s physique is slender and athletic, hard muscle underlying soft feminine curves that are plentiful and pronounced. Angular features of high cheekbones and a fairly regal face, as well as the impressive “perfect” proportions of her body are inherited from her Firstborn Sidhe mother. She has the same long elvish-style ears as most Faerie races do, and was born with feathered-style wing birthmarks on her back that look more like tribal tattoos than natural formations. Minerva is five-feet-seven-inches tall and weighs roughly one-hundred-thirty-three pounds.
+<br><br>
+<b>Personality:</b><br>
+Her temperament fluctuates as one might expect for a young growing female getting through puberty. Minerva possesses her mother’s compassionate heart and ability to see the best in other people, often making her sympathetic and soft on those clearly in need. However this hardly detracts from her nerves of steel, intimidating capacity for stubbornness and ferocity alike, as well as dangerous cunning. Sly and tactical, much like her father, though the extremes between the inherited behaviors from both parents often causes her to fluctuate from one to the other in distasteful mood swings.
+</div>
+<div id="tab5">
+Face of a Cutie
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/STw24Zp.png"/>
+</div>
+
+<div id="tab7">
+A birth that almost ended in tragedy; Vulcan and Minerva were produced by a mother who fought hard to keep them healthy at the expense of her own health. Gossamer, a powerful Firstborn Sidhe Enchantress, conceived the twins with her greatest love and soul mate, a human Conjuration Mage named Apollo O’Connor. For a good majority of her long life her reproductive organs had been intentionally sabotaged and damaged so severely that even most powerful Faith mages were unable of helping her piece her ovaries back together. A woman who wanted nothing more than to be a mother and have a family was rendered barren unfairly by captors and overlords that sought to make her suffer. 
+<br><br>
+Some time after achieving her freedom from captivity and harsh conditions, while studying at a magical academy known as Ulreich University (where she met Apollo who was a teacher at said establishment) she befriended a particular Healer who eventually became so skilled in her art that she managed to find a way to repair Gossamer’s body just enough for her to be able to produce at least one child. Unbeknownst to her producing twins was sealed into her genetics, which put a lot of extra strain on her body as a whole, and threatened to take her life in exchange for the perfect health of her newborns.
+<br><br>
+Fortunately the Faerie found herself in the hands of good friends and managed to survive, soon getting back on her feet and was able to provide plenty of proper care for her new babes. 
+</div>
+<div id="tab8">
+Birth & Early Life
+</div>
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/cBDYjRJ.png"/>
+</div>
+
+<div id="tab10">
+<b>Bloodborn Sidhe:</b><br>
+Just a name referring to Faeries born half Human half Sidhe.
+<br><br>
+<b>Immortality:</b><br>
+Born like most creatures, undergoing stages from adolescence to adulthood. The rate of their growth can depend on the passage of time when they are outside of the Faerie Realms, however since time is not a trackable/traceable concept within the Faerie homeworld their growth there depends entirely on the combination of magical power growth and mental growth through experience. Regardless of how fast they achieve their state of peak physical and magical development their organic bodies do not possess the capacity to deteriorate over time. They are certainly not unkillable, they simply cannot die from natural causes (such as nonmagic/mundane diseases or old age).
+<br><br>
+<b>Mana Sensitivity:</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana, even if something is blocking their vision (assuming counter-sensory designed to block this kind of stuff is below Mage in rank), a faint outline of an aura can be seen--or sensed--so long as the fellow magic user is within a twenty foot radius of the Fae. They cannot tell how much mana is being used or the user has left over, she is merely sensitive to when it is currently in use within the radius. 
+<br><br>
+<b>Enhanced Speed:</b><br>
+The body of the Sidhe-kind is light, petite, and athletic. They can move double the speed of the average human (x2 movement speed) and the strongest Fae's speeds can rival that of a hummingbird's. 
+<br><br>
+<b>Enhanced Flexibility:</b><br>
+Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act. 
+<br><br>
+<b>Burning Calories:</b><br>
+The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods are said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it. 
+<br><br>
+<b>Hidden Wings:</b><br>
+Tribal-like wing markings cover the backs of the Sidhe-kind. These tribal markings cause various different kinds of winged silhouettes to form as an aura behind each individual Faerie when they dip into their mana pool. 
+<br><br>
+<b>Advanced Perception:</b><br>
+Their minds process actions and come up with reactions twice as fast as the average human's. (x2 mental processing speed)
+<br><br>
+<b>Twin Bonds:</b><br>
+The connection between Gossamer’s twin-born descendants is phenomenal. They are so drastically in sync with one another that their teamwork is flawless. Both twins have an almost telekinetic connection, while they can’t project fully formed thoughts or images to one another they can feel each other’s emotions. Regardless they can easily read one another’s facial expressions, and are so familiar with each other it is easy for them to guess the other’s thoughts or next actions through fairly accurate “prediction.”
+<br>
+Additionally they can feel one another’s life and health, even when separated, able to tell if life is fading from the other or they are severely injured and in extreme amounts of pain. Should one of them die the other will certainly be able to feel it.
+<br><br>
+<b>O'Connor Eyes (Plus Ultra):</b><br>
+O’Connors naturally have abnormally green eyes, a manifestation of the distinct presence of magical energy dormant within them. For these Half-Fae descendants, who are the children of magic incarnate in human form, the brightness of their emerald hues are greatly enhanced to the point of even emitting soft glows. This has little more use than aesthetic, allowing them to see just slightly better in the dark than the average person (and providing a slight weakness to extreme sudden changes in lighting).
+</div>
+<div id="tab11">
+Bloodborn
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/QznTUwH.jpg"/>
+</div>
+
+<div id="tab13">
+<b>Conjuration: High Duomancer</b><br>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+<br><br>
+<b>Enchantment: High Duomancer</b><br>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+</div>
+<div id="tab14">
+High Duomancer
+</div>
+<div id="tab15">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bvFgl68.jpg"/>
+</div>
+
+<div id="tab16">
+<b>Name:</b> Vulcan O'Connor<br>
+<b>Gender:</b> Male<br>
+<b>Species:</b> Faerie<br>
+<b>Race:</b> Bloodborn Sidhe<br>
+<b>Title:</b> The Green Eyed Raven<br>
+<b>Occupation:</b> {Redacted} of Falias
+</div>
+<div id="tab17">
+Twin Brother
+</div>
+<div id="tab18">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/olkYqD5.png"/>
+</div>
+
+<div id="tab19">
+<b>Appearance:</b><br>
+The elder of the identical twins is a tall, lean, well built young man. Much like his sister he retains the same dark olive skin, pitch black hair--although his isn’t nearly as long as hers--and emerald eyes. He is taller than her, measuring in at roughly six feet exactly, and weighing closer to two hundred pounds. Most of this weight comes from thick hard muscle, which provides the accentuation his male figure requires to uphold the same idea of “perfection” his mother was “born” with and his father retains through constant training. Vulcan’s own facial structure is also fairly angular, though not nearly to the extent of Minerva’s, causing him to reflect the spitting image of his old man during his youth. Despite their differing genders and builds the twins are still very close to one another in appearance, their relation to one another as siblings is as obvious as the sun in the sky.
+<br><br>
+<b>Personality:</b><br>
+Vulcan retains very little of his mother’s behavioral tendencies, taking after his father almost exactly. He is savage, especially in battle, and can be known as a rather cruel individual. Cunning, conniving, perfectly fitting the bill for an “Unseelie” Fae while not technically possessing any Unseelie blood in his veins. This is balanced out by his fierce loyalty, especially to those close to his heart. Family is valued very highly to him, and he would do anything to keep them safe, happy, and make them proud.
+</div>
+<div id="tab20">
+Troublemaker
+</div>
+<div id="tab21">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/DE0jngw.png"/>
+</div>
+
+<div id="tab22">
+Vulcan and Minerva grew up in the adoring arms of a mother who loved them more than anything, an elder sister who wasn’t related to anyone in the family by blood but might as well have been, and a proud father who felt blessed to keep his gorgeous bride and beautiful children. Their family ties were strong, and they knew they were treasured, but that didn’t make life easy. The world of their true home--the Faerie Realms--as well as their secondary residence in the world where Ulreich University existed and operated were both riddled with conflict and war. Both parents, as well as the aforementioned elder sister, were incredibly useful battlemages who had made quite the reputation for themselves over the years. Their presence on the battlefield was in constant demand, and all parties were determined to prepare their offspring for an equally urgent and hard future. 
+<br><br>
+When Gossamer and Apollo weren’t absent from the lives of their young ones they kept to strict training regimens, developing them from an early age to assure they could take care of themselves and survive in an extremely dangerous and unfair multiverse. Even still both siblings valued these harsh sessions, seeing them as bonding opportunities with their warrior parents, and felt honored to be bestowed with years of knowledge and experience. This was not without its negative effects. The twins became incapable of functioning normally in mundane society, often resorting straight to violence in the face of conflict, prepared to deal with a climate of war and merciless killing. They found themselves isolated from human society, bringing nothing but trouble wherever they roamed within the New World … though some may argue that to be more of a good thing than a bad.
+</div>
+<div id="tab23">
+Birth & Early Life
+</div>
+<div id="tab24">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/n9t4nSF.png"/>
+</div>
+
+<div id="tab25">
+<b>Bloodborn Sidhe:</b><br>
+Just a name referring to Faeries born half Human half Sidhe.
+<br><br>
+<b>Immortality:</b><br>
+Born like most creatures, undergoing stages from adolescence to adulthood. The rate of their growth can depend on the passage of time when they are outside of the Faerie Realms, however since time is not a trackable/traceable concept within the Faerie homeworld their growth there depends entirely on the combination of magical power growth and mental growth through experience. Regardless of how fast they achieve their state of peak physical and magical development their organic bodies do not possess the capacity to deteriorate over time. They are certainly not unkillable, they simply cannot die from natural causes (such as nonmagic/mundane diseases or old age).
+<br><br>
+<b>Mana Sensitivity:</b><br>
+The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana, even if something is blocking their vision (assuming counter-sensory designed to block this kind of stuff is below Mage in rank), a faint outline of an aura can be seen--or sensed--so long as the fellow magic user is within a twenty foot radius of the Fae. They cannot tell how much mana is being used or the user has left over, she is merely sensitive to when it is currently in use within the radius. 
+<br><br>
+<b>Enhanced Speed:</b><br>
+The body of the Sidhe-kind is light, petite, and athletic. They can move double the speed of the average human (x2 movement speed) and the strongest Fae's speeds can rival that of a hummingbird's. 
+<br><br>
+<b>Enhanced Flexibility:</b><br>
+Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act. 
+<br><br>
+<b>Burning Calories:</b><br>
+The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods are said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it. 
+<br><br>
+<b>Hidden Wings:</b><br>
+Tribal-like wing markings cover the backs of the Sidhe-kind. These tribal markings cause various different kinds of winged silhouettes to form as an aura behind each individual Faerie when they dip into their mana pool. 
+<br><br>
+<b>Advanced Perception:</b><br>
+Their minds process actions and come up with reactions twice as fast as the average human's. (x2 mental processing speed)
+<br><br>
+<b>Twin Bonds:</b><br>
+The connection between Gossamer’s twin-born descendants is phenomenal. They are so drastically in sync with one another that their teamwork is flawless. Both twins have an almost telekinetic connection, while they can’t project fully formed thoughts or images to one another they can feel each other’s emotions. Regardless they can easily read one another’s facial expressions, and are so familiar with each other it is easy for them to guess the other’s thoughts or next actions through fairly accurate “prediction.”
+<br>
+Additionally they can feel one another’s life and health, even when separated, able to tell if life is fading from the other or they are severely injured and in extreme amounts of pain. Should one of them die the other will certainly be able to feel it.
+<br><br>
+<b>O'Connor Eyes (Plus Ultra):</b><br>
+O’Connors naturally have abnormally green eyes, a manifestation of the distinct presence of magical energy dormant within them. For these Half-Fae descendants, who are the children of magic incarnate in human form, the brightness of their emerald hues are greatly enhanced to the point of even emitting soft glows. This has little more use than aesthetic, allowing them to see just slightly better in the dark than the average person (and providing a slight weakness to extreme sudden changes in lighting).
+</div>
+<div id="tab26">
+Sidhe
+</div>
+<div id="tab27">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/2SNAOcO.png"/>
+</div>
+
+<div id="tab28">
+<b>Enchantment: High Duomancer</b><br>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<b>Conjuration: High Duomancer</b><br>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+</div>
+<div id="tab29">
+High Duomancer
+</div>
+<div id="tab30">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Gjzknqh.jpg"/>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Minerva.mp3" autostart="true" loop="true">
