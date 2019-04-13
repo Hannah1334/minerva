@@ -2,353 +2,1091 @@
 
 <style type="text/css">
 body{
-background-color:#919191;
-background-image: url('https://i.imgur.com/sVLHgTL.png') !important; 
-background-repeat:repeat !important; 
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
 background-position:center !important; 
+background-size:cover;
+background-color:#000000;
+overflow:hidden;
 }
 
 ::-webkit-scrollbar {width: 4px; height: 4px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #7D7D7D;}
+::-webkit-scrollbar-thumb {background: #022e04;}
 
-#box1 {
+#minervaarea {
 position:absolute;
-background-color:#AFAFAF;
-width:15%;
-height:50%;
-top:25%;
-left:34.5%;
+background-image: url('https://i.imgur.com/ssWXVZE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+background-color:#000000;
+width:20%;
+height:15%;
+top:9%;
+left:20%;
 }
 
-#box2 {
+#minervapic {
 position:absolute;
-background-color:#AFAFAF;
-width:15%;
-height:50%;
-top:25%;
-left:50.5%;
-}
-
-#title1 {
-position:absolute;
-background-color:#CDCDCD;
-width:15%;
-height:9%;
-top:25%;
-left:34.5%;
-color:#666666;
-text-align:center;
-font-size:3.5vh;
-text-shadow: 2px 2px #FFFFFF;
-font-family: 'Lobster', cursive;
-line-height:2;
-}
-
-#title2 {
-position:absolute;
-background-color:#CDCDCD;
-width:15%;
-height:9%;
-top:25%;
-left:50.5%;
-color:#666666;
-text-align:center;
-font-size:3.5vh;
-text-shadow: 2px 2px #FFFFFF;
-font-family: 'Lobster', cursive;
-line-height:2;
-}
-
-#line1 {
-position:absolute;
-background-color:#7D7D7D;
-width:15%;
-height:1%;
-top:33.5%;
-left:34.5%;
-}
-
-#line2 {
-position:absolute;
-background-color:#7D7D7D;
-width:15%;
-height:1%;
-top:33.5%;
-left:50.5%;
-}
-
-#tabbox1 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:35%;
-color:#FFFFFF;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
+background-image: url('https://i.imgur.com/j0WDDEq.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:3.5%;
+height:7%;
+top:11%;
+left:21%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tabbox2 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:38%;
-color:#FFFFFF;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
+#minervapic:hover {
+background-image: url('http://fp.chatango.com/profileimg/s/i/sister/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tabbox3 {
+#minervanametitle {
 position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:11%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#minervaname {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:11%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#minervaaccounttitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:15.75%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#minervaaccount {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:15.75%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#minervarelation {
+position:absolute;
+width:18%;
+height:2%;
+top:20.25%;
+left:21%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1;
+}
+
+#vulcanarea {
+position:absolute;
+background-image: url('https://i.imgur.com/ssWXVZE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:bottom !important; 
+background-size:cover;
+background-color:#000000;
+width:20%;
+height:15%;
+top:26%;
+left:20%;
+}
+
+#vulcanpic {
+position:absolute;
+background-image: url('https://i.imgur.com/CjEIT3F.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:3.5%;
+height:7%;
+top:28%;
+left:21%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#vulcanpic:hover {
+background-image: url('http://fp.chatango.com/profileimg/b/r/brother/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#vulcannametitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:28%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#vulcanname {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:28%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#vulcanaccounttitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:32.75%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#vulcanaccount {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:32.75%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#vulcanrelation {
+position:absolute;
+width:18%;
+height:2%;
+top:37.25%;
+left:21%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1;
+}
+
+#junearea {
+position:absolute;
+background-image: url('https://i.imgur.com/ssWXVZE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+background-color:#000000;
+width:20%;
+height:15%;
+top:43%;
+left:20%;
+}
+
+#junepic {
+position:absolute;
+background-image: url('https://i.imgur.com/dsBVBZk.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:3.5%;
+height:7%;
+top:45%;
+left:21%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#junepic:hover {
+background-image: url('http://fp.chatango.com/profileimg/m/u/mutt/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#junenametitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:45%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#junename {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:45%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#juneaccounttitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:49.75%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#juneaccount {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:49.75%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#junerelation {
+position:absolute;
+width:18%;
+height:2%;
+top:54.25%;
+left:21%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1;
+}
+
+#apolloarea {
+position:absolute;
+background-image: url('https://i.imgur.com/ssWXVZE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:bottom !important; 
+background-size:cover;
+background-color:#000000;
+width:20%;
+height:15%;
+top:60%;
+left:20%;
+}
+
+#apollopic {
+position:absolute;
+background-image: url('https://i.imgur.com/eNqhGFc.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:3.5%;
+height:7%;
+top:62%;
+left:21%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#apollopic:hover {
+background-image: url('http://fp.chatango.com/profileimg/g/r/groove/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#apollonametitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:62%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#apolloname {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:62%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#apolloaccounttitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:66.75%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#apolloaccount {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:66.75%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#apollorelation {
+position:absolute;
+width:18%;
+height:2%;
+top:71.25%;
+left:21%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1;
+}
+
+#gossamerarea {
+position:absolute;
+background-image: url('https://i.imgur.com/ssWXVZE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+background-color:#000000;
+width:20%;
+height:15%;
+top:77%;
+left:20%;
+}
+
+#gossamerpic {
+position:absolute;
+width:3.5%;
+height:7%;
+top:79%;
+left:21%;
+background-image: url('https://i.imgur.com/aq6wYl8.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#gossamerpic:hover {
+background-image: url('http://fp.chatango.com/profileimg/f/a/fae/thumb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#gossamernametitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:79%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#gossamername {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:79%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#gossameraccounttitle {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:5%;
+height:2.25%;
+top:83.75%;
+left:25.5%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+}
+
+#gossameraccount {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:8.5%;
+height:2.25%;
+top:83.75%;
+left:30.5%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+}
+
+#gossamerrelation {
+position:absolute;
+width:18%;
+height:2%;
+top:88.25%;
+left:21%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1;
+}
+
+#pic1bg {
+position:absolute;
+background-color:#09240f;
+width:15%;
+height:24%;
+top:9%;
 left:41%;
-color:#FFFFFF;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox4 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:44%;
-color:#FFFFFF;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox5 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:47%;
-color:#FFFFFF;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox6 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:51%;
-color:#000000;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox7 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:54%;
-color:#000000;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox8 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:57%;
-color:#000000;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox9 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:60%;
-color:#000000;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox10 {
-position:absolute;
-background-color:#7D7D7D;
-width:2%;
-height:4%;
-top:32%;
-left:63%;
-color:#000000;
-text-transform:uppercase;
-font-size:1vh;
-text-align:center;
-line-height:4;
-font-family: 'PT Sans Narrow', sans-serif;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover {
-background-color:#9B9B9B;
-color:#000000;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg) ;
--ms-transform: rotate(360deg);
-transform: rotate(360deg) ;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox6:hover,#tabbox7:hover,#tabbox8:hover,#tabbox9:hover,#tabbox10:hover {
-background-color:#9B9B9B;
-color:#FFFFFF;
--webkit-transform: rotate(360deg);
--moz-transform: rotate(360deg);
--o-transform: rotate(360deg) ;
--ms-transform: rotate(360deg);
-transform: rotate(360deg) ;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#pic1holder {
-position:absolute;
-background-color:#CDCDCD;
-width:9%;
-height:18%;
-top:38%;
-left:37.5%;
-}
-
-#pic2holder {
-position:absolute;
-background-color:#CDCDCD;
-width:9%;
-height:18%;
-top:38%;
-left:53.5%;
 }
 
 #pic1 {
 position:absolute;
-background-color:#FFFFFF;
-width:8%;
-height:16%;
-top:39%;
-left:38%;
+width:13%;
+height:20%;
+top:11%;
+left:42%;
+}
+
+#pic2bg {
+position:absolute;
+background-color:#09240f;
+width:15%;
+height:29%;
+top:35%;
+left:41%;
 }
 
 #pic2 {
 position:absolute;
-background-color:#FFFFFF;
-width:8%;
-height:16%;
-top:39%;
-left:54%;
+width:13%;
+height:25%;
+top:37%;
+left:42%;
 }
 
-#content1 {
+#pic3bg {
 position:absolute;
-background-color:#CDCDCD;
+background-color:#09240f;
+width:15%;
+height:26%;
+top:66%;
+left:41%;
+}
+
+#pic3 {
+position:absolute;
+width:13%;
+height:22%;
+top:68%;
+left:42%;
+}
+
+#backgroundbox {
+position:absolute;
+background-image: url('https://i.imgur.com/akVfegP.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:left !important; 
+background-size:cover;
+background-color:#000000;
+width:22%;
+height:83%;
+top:9%;
+left:57%;
+}
+
+#tabbox1 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:58%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tabbox2 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:60.5%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tabbox3 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:63%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tabbox4 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:65.5%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tabbox5 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:68%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#tabbox6 {
+position:absolute;
+width:1.5%;
+height:3%;
+top:11%;
+left:70.5%;
+background-image: url('https://i.imgur.com/qNjeo3R.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+}
+
+#minititle {
+position:absolute;
+width:5%;
+height:3%;
+top:11%;
+left:73%;
+text-align:center;
+font-size:1.8vh;
+color:#97d186;
+font-family: 'Playfair Display', serif;
+text-transform:uppercase;
+line-height:1.5;
+}
+
+#basicbox {
+position:absolute;
+width:20%;
+height:20%;
+top:16%;
+left:58%;
+}
+
+#stattitle1 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:0%;
+left:0%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat1 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:0%;
+left:25%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle2 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:21.5%;
+left:0%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat2 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:21.5%;
+left:25%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle3 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:43%;
+left:0%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat3 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:43%;
+left:25%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle4 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:64%;
+left:0%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat4 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:64%;
+left:25%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle5 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:85%;
+left:0%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat5 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:85%;
+left:25%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle6 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:0%;
+left:50%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat6 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:0%;
+left:75%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle7 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:21.5%;
+left:50%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat7 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:21.5%;
+left:75%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle8 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:43%;
+left:50%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat8 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:43%;
+left:75%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle9 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:64%;
+left:50%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat9 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:64%;
+left:75%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#stattitle10 {
+position:absolute;
+background-color:rgba(9, 36, 15, 0.85);
+width:25%;
+height:15%;
+top:85%;
+left:50%;
+text-align:center;
+font-size:1.5vh;
+text-transform:uppercase;
+font-family: 'Anton', sans-serif;
+color:#2c8500;
+letter-spacing:3px;
+line-height:2;
+}
+
+#stat10 {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.55);
+width:25%;
+height:15%;
+top:85%;
+left:75%;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Dosis', sans-serif;
+color:#ffffff;
+line-height:1.7;
+}
+
+#content {
+position:absolute;
+background-color:rgba(0, 0, 0, 0.65);
 padding:1%;
 overflow:auto;
-width:13%;
-height:12.2%;
-top:58.5%;
-left:34.5%;
-color:#000000;
+width:18%;
+height:48%;
+top:38%;
+left:58%;
+color:#ffffff;
 font-size:1.5vh;
-font-family: 'Abel', sans-serif;
+font-family: 'Dosis', sans-serif;
+text-align:justify;
 }
 
-#content2 {
-position:absolute;
-background-color:#CDCDCD;
-padding:1%;
-overflow:auto;
-width:13%;
-height:12.2%;
-top:58.5%;
-left:50.5%;
-color:#000000;
-font-size:1.5vh;
-font-family: 'Abel', sans-serif;
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.tabs {
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #324d3b;
+  color: #6a8573;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size:1.8vh;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #324d3b transparent transparent transparent;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.tabs{
+display:block;
+opacity:0;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs1{
 display:block;
 width:100%;
 height:100%;
@@ -357,249 +1095,315 @@ height:100%;
 transition: all 0.8s ease-out;
 }
 
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27,#tab28,#tab29,#tab30 {
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27,#tab28,#tab29,#tab30,#tab31,#tab32,#tab33,#tab34,#tab35,#tab36,#tab37,#tab38,#tab39,#tab40,#tab41,#tab42,#tab43,#tab44,#tab45,#tab46,#tab47,#tab48,#tab49,#tab50,#tab51,#tab52,#tab53,#tab54 {
 display: none;
 }
 
 a {
-color:#666666;
+color:#97d186;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
 a:hover {
-color:#FFFFFF;
+color:#666666;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
+h1 {
+color:#97d186;
+background-color:rgba(0, 0, 0, 0.55);
+border-left:10px solid rgba(9, 36, 15, 0.85);
+border-right:10px solid rgba(9, 36, 15, 0.85);
+font-family: 'Playfair Display', serif;
+text-align:center;
+font-size: 2vh;
+text-transform:uppercase;
+}
+
 i {
-color:#333333;
+color:#666666;
 }
 
 b {
-color:#7D7D7D;
-text-transform:uppercase;
-font-family: 'PT Sans Narrow', sans-serif;
-letter-spacing:2px;
-}
+color:#2c8500;
+font-family: 'Anton', sans-serif;
 </style>
 
-<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Abel|Lobster|PT+Sans+Narrow" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content1').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation2(id) {document.getElementById('title1').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation3(id) {document.getElementById('title2').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation4(id) {document.getElementById('pic1').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation5(id) {document.getElementById('pic2').innerHTML=document.getElementById(id).innerHTML}</script>
+<html>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur829.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Anton|Dosis|Playfair+Display" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('pic1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('pic2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('pic3').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('minititle').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation5(id) {document.getElementById('basicbox').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="box1"></div>
-<div id="box2"></div>
-<div id="title1">
-Twin Sister
+<div id="minervaarea"></div>
+<span class="tabs1" onClick="changeNavigation ('tab25');changeNavigation1 ('tab26');changeNavigation2 ('tab27');changeNavigation3 ('tab28');changeNavigation4 ('tab29');changeNavigation5 ('tab30')">
+<div id="minervapic"></div>
+</span>
+<div id="minervanametitle">
+Name:
 </div>
-<div id="title2">
-Twin Brother
+<div id="minervaname">
+Minerva O'Connor
 </div>
-<div id="line1"></div>
-<div id="line2"></div>
+<div id="minervaaccounttitle">
+Title:
+</div>
+<div id="minervaaccount">
+The Emerald Owl
+</div>
+<div id="minervarelation">
+───────────── Me! ─────────────
+</div>
+<div id="vulcanarea"></div>
+<span class="tabs1" onClick="changeNavigation ('tab31');changeNavigation1 ('tab32');changeNavigation2 ('tab33');changeNavigation3 ('tab34');changeNavigation4 ('tab35');changeNavigation5 ('tab36')">
+<div id="vulcanpic"></div>
+</span>
+<div id="vulcannametitle">
+Name:
+</div>
+<div id="vulcanname">
+Vulcan O'Connor
+</div>
+<div id="vulcanaccounttitle">
+Title:
+</div>
+<div id="vulcanaccount">
+Green Eyed Raven
+</div>
+<div id="vulcanrelation">
+──────── [Twin] Brother ────────
+</div>
+<div id="junearea"></div>
+<span class="tabs1" onClick="changeNavigation ('tab37');changeNavigation1 ('tab38');changeNavigation2 ('tab39');changeNavigation3 ('tab40');changeNavigation4 ('tab41');changeNavigation5 ('tab42')">
+<div id="junepic"></div>
+</span>
+<div id="junenametitle">
+Name:
+</div>
+<div id="junename">
+June O'Connor
+</div>
+<div id="juneaccounttitle">
+Title:
+</div>
+<div id="juneaccount">
+Electric Butterfly
+</div>
+<div id="junerelation">
+────────── Big Sister ──────────
+</div>
+<div id="apolloarea"></div>
+<span class="tabs1" onClick="changeNavigation ('tab43');changeNavigation1 ('tab44');changeNavigation2 ('tab45');changeNavigation3 ('tab46');changeNavigation4 ('tab47');changeNavigation5 ('tab48')">
+<div id="apollopic"></div>
+</span>
+<div id="apollonametitle">
+Name:
+</div>
+<div id="apolloname">
+Apollo O'Connor
+</div>
+<div id="apolloaccounttitle">
+Title:
+</div>
+<div id="apolloaccount">
+???
+</div>
+<div id="apollorelation">
+─────────── Father ───────────
+</div>
+<div id="gossamerarea"></div>
+<span class="tabs1" onClick="changeNavigation ('tab49');changeNavigation1 ('tab50');changeNavigation2 ('tab51');changeNavigation3 ('tab52');changeNavigation4 ('tab53');changeNavigation5 ('tab54')">
+<div id="gossamerpic"></div>
+</span>
+<div id="gossamernametitle">
+Name:
+</div>
+<div id="gossamername">
+Gossamer O'Connor
+</div>
+<div id="gossameraccounttitle">
+Title:
+</div>
+<div id="gossameraccount">
+The Butterfly
+</div>
+<div id="gossamerrelation">
+─────────── Mother ───────────
+</div>
+
+<div id="pic1bg"></div>
+<div id="pic1">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zC5SoIx.png"/>
+</div>
+<div id="pic2bg"></div>
+<div id="pic2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bWKLQeG.png"/>
+</div>
+<div id="pic3bg"></div>
+<div id="pic3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RM5v7uy.png"/>
+</div>
+
+<div id="backgroundbox"></div>
 <div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation2 ('tab2');changeNavigation4 ('tab3')">Basics</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3');changeNavigation3 ('tab4')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">Details</span>
+</div>
 </div>
 <div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation2 ('tab5');changeNavigation4 ('tab6')">Details</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6');changeNavigation2 ('tab7');changeNavigation3 ('tab8')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">History</span>
+</div>
 </div>
 <div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation2 ('tab8');changeNavigation4 ('tab9')">History</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10');changeNavigation2 ('tab11');changeNavigation3 ('tab12')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">Racials</span>
+</div>
 </div>
 <div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab10');changeNavigation2 ('tab11');changeNavigation4 ('tab12')">Racials</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14');changeNavigation2 ('tab15');changeNavigation3 ('tab16')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">Conjuration</span>
+</div>
 </div>
 <div id="tabbox5">
-<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation2 ('tab14');changeNavigation4 ('tab15')">Magic</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab17');changeNavigation1 ('tab18');changeNavigation2 ('tab19');changeNavigation3 ('tab20')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">Enchantment</span>
+</div>
 </div>
 <div id="tabbox6">
-<span class="tabs" onClick="changeNavigation1 ('tab16');changeNavigation3 ('tab17');changeNavigation5 ('tab18')">Basics</span>
+<div class="tooltip">
+<span class="tabs" onClick="changeNavigation ('tab21');changeNavigation1 ('tab22');changeNavigation2 ('tab23');changeNavigation3 ('tab24')"><img style="width:100%;height:100%;" src="https://i.imgur.com/e6E6Ulm.png"/></span>
+<span class="tooltiptext">Inventory</span>
 </div>
-<div id="tabbox7">
-<span class="tabs" onClick="changeNavigation1 ('tab19');changeNavigation3 ('tab20');changeNavigation5 ('tab21')">Details</span>
 </div>
-<div id="tabbox8">
-<span class="tabs" onClick="changeNavigation1 ('tab22');changeNavigation3 ('tab23');changeNavigation5 ('tab24')">History</span>
+<div id="minititle">
+'Lil Sister
 </div>
-<div id="tabbox9">
-<span class="tabs" onClick="changeNavigation1 ('tab25');changeNavigation3 ('tab26');changeNavigation5 ('tab27')">Racials</span>
+<div id="basicbox">
+<div id="stattitle1">
+Name:
 </div>
-<div id="tabbox10">
-<span class="tabs" onClick="changeNavigation1 ('tab28');changeNavigation3 ('tab29');changeNavigation5 ('tab30')">Magic</span>
+<div id="stat1">
+Minerva
 </div>
-<div id="pic1holder"></div>
-<div id="pic2holder"></div>
-<div id="pic1">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/FLafvki.png"/>
+<div id="stattitle2">
+Gender:
 </div>
-<div id="pic2">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/olkYqD5.png"/>
+<div id="stat2">
+Female
 </div>
-<div id="content1">
-<b>Name:</b> Minerva O'Connor<br>
-<b>Gender:</b> Female<br>
-<b>Species:</b> Faerie<br>
-<b>Race:</b> Bloodborn Sidhe<br>
-<b>Title:</b> The Emerald Owl<br>
-<b>Occupation:</b> {Redacted} of Falias
+<div id="stattitle3">
+Species:
 </div>
-<div id="content2">
-<b>Name:</b> Vulcan O'Connor<br>
-<b>Gender:</b> Male<br>
-<b>Species:</b> Faerie<br>
-<b>Race:</b> Bloodborn Sidhe<br>
-<b>Title:</b> The Green Eyed Raven<br>
-<b>Occupation:</b> {Redacted} of Falias
+<div id="stat3">
+Faerie
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Late Teens
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+Minnie
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+Heterosexual
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Bloodborn (S)
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+125 lbs.
+</div>
+</div>
+<div id="content">
+<h1>Appearance</h1>
+Italian heritage is very prominent in her appearance. Minerva’s complexion is a dark olive tan, which appears deeper in tone than it actually is thanks to the accent provided by long locks of pitch black hair. She bears the signature glowing emerald eyes of her O’Connor blood, causing her to take after her father a lot in appearance. The young princess’s physique is slender and athletic, hard muscle underlying soft feminine curves that are plentiful and pronounced. Angular features of high cheekbones and a fairly regal face, as well as the impressive “perfect” proportions of her body are inherited from her Firstborn Sidhe mother. She has the same long elvish-style ears as most Faerie races do, and was born with feathered-style wing birthmarks on her back that look more like tribal tattoos than natural formations. Minerva is five-feet-seven-inches tall and weighs roughly one-hundred-thirty-three pounds.
+<br><br>
+<h1>Personality</h1>
+Her temperament fluctuates as one might expect for a young growing female getting through puberty. Minerva possesses her mother’s compassionate heart and ability to see the best in other people, often making her sympathetic and soft on those clearly in need. However this hardly detracts from her nerves of steel, intimidating capacity for stubbornness and ferocity alike, as well as dangerous cunning. Sly and tactical, much like her father, though the extremes between the inherited behaviors from both parents often causes her to fluctuate from one to the other in distasteful mood swings.
 </div>
 
 <div id="tab1">
-<b>Name:</b> Minerva O'Connor<br>
-<b>Gender:</b> Female<br>
-<b>Species:</b> Faerie<br>
-<b>Race:</b> Bloodborn Sidhe<br>
-<b>Title:</b> The Emerald Owl<br>
-<b>Occupation:</b> {Redacted} of Falias
-</div>
-<div id="tab2">
-Twin Sister
-</div>
-<div id="tab3">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/FLafvki.png"/>
-</div>
-
-<div id="tab4">
-<b>Appearance:</b><br>
+<h1>Appearance</h1>
 Italian heritage is very prominent in her appearance. Minerva’s complexion is a dark olive tan, which appears deeper in tone than it actually is thanks to the accent provided by long locks of pitch black hair. She bears the signature glowing emerald eyes of her O’Connor blood, causing her to take after her father a lot in appearance. The young princess’s physique is slender and athletic, hard muscle underlying soft feminine curves that are plentiful and pronounced. Angular features of high cheekbones and a fairly regal face, as well as the impressive “perfect” proportions of her body are inherited from her Firstborn Sidhe mother. She has the same long elvish-style ears as most Faerie races do, and was born with feathered-style wing birthmarks on her back that look more like tribal tattoos than natural formations. Minerva is five-feet-seven-inches tall and weighs roughly one-hundred-thirty-three pounds.
 <br><br>
-<b>Personality:</b><br>
+<h1>Personality</h1>
 Her temperament fluctuates as one might expect for a young growing female getting through puberty. Minerva possesses her mother’s compassionate heart and ability to see the best in other people, often making her sympathetic and soft on those clearly in need. However this hardly detracts from her nerves of steel, intimidating capacity for stubbornness and ferocity alike, as well as dangerous cunning. Sly and tactical, much like her father, though the extremes between the inherited behaviors from both parents often causes her to fluctuate from one to the other in distasteful mood swings.
 </div>
-<div id="tab5">
-Face of a Cutie
+<div id="tab2">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zC5SoIx.png"/>
 </div>
-<div id="tab6">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/STw24Zp.png"/>
+<div id="tab3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bWKLQeG.png"/>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RM5v7uy.png"/>
 </div>
 
-<div id="tab7">
+<div id="tab5">
+<h1> Birth & Early Life</h1>
 A birth that almost ended in tragedy; Vulcan and Minerva were produced by a mother who fought hard to keep them healthy at the expense of her own health. Gossamer, a powerful Firstborn Sidhe Enchantress, conceived the twins with her greatest love and soul mate, a human Conjuration Mage named Apollo O’Connor. For a good majority of her long life her reproductive organs had been intentionally sabotaged and damaged so severely that even most powerful Faith mages were unable of helping her piece her ovaries back together. A woman who wanted nothing more than to be a mother and have a family was rendered barren unfairly by captors and overlords that sought to make her suffer. 
 <br><br>
 Some time after achieving her freedom from captivity and harsh conditions, while studying at a magical academy known as Ulreich University (where she met Apollo who was a teacher at said establishment) she befriended a particular Healer who eventually became so skilled in her art that she managed to find a way to repair Gossamer’s body just enough for her to be able to produce at least one child. Unbeknownst to her producing twins was sealed into her genetics, which put a lot of extra strain on her body as a whole, and threatened to take her life in exchange for the perfect health of her newborns.
 <br><br>
-Fortunately the Faerie found herself in the hands of good friends and managed to survive, soon getting back on her feet and was able to provide plenty of proper care for her new babes. 
-</div>
-<div id="tab8">
-Birth & Early Life
-</div>
-<div id="tab9">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/cBDYjRJ.png"/>
-</div>
-
-<div id="tab10">
-<b>Bloodborn Sidhe:</b><br>
-Just a name referring to Faeries born half Human half Sidhe.
+Fortunately the Faerie found herself in the hands of good friends and managed to survive, soon getting back on her feet. She found herself able to provide plenty of proper care for her new babes. 
 <br><br>
-<b>Immortality:</b><br>
-Born like most creatures, undergoing stages from adolescence to adulthood. The rate of their growth can depend on the passage of time when they are outside of the Faerie Realms, however since time is not a trackable/traceable concept within the Faerie homeworld their growth there depends entirely on the combination of magical power growth and mental growth through experience. Regardless of how fast they achieve their state of peak physical and magical development their organic bodies do not possess the capacity to deteriorate over time. They are certainly not unkillable, they simply cannot die from natural causes (such as nonmagic/mundane diseases or old age).
-<br><br>
-<b>Mana Sensitivity:</b><br>
-The Fae-kind are very sensitive to auras and mana, allowing them to feel or see when another being is drawing from their mana pool or activating their mana, even if something is blocking their vision (assuming counter-sensory designed to block this kind of stuff is below Mage in rank), a faint outline of an aura can be seen--or sensed--so long as the fellow magic user is within a twenty foot radius of the Fae. They cannot tell how much mana is being used or the user has left over, she is merely sensitive to when it is currently in use within the radius. 
-<br><br>
-<b>Enhanced Speed:</b><br>
-The body of the Sidhe-kind is light, petite, and athletic. They can move double the speed of the average human (x2 movement speed) and the strongest Fae's speeds can rival that of a hummingbird's. 
-<br><br>
-<b>Enhanced Flexibility:</b><br>
-Their bodies are as flexible as they are light, allowing them to contort their shapes into absurd formations. Something someone would expect to see in a circus act. 
-<br><br>
-<b>Burning Calories:</b><br>
-The Fae-kind eat thousands upon thousands of calories on purpose and burn them off very quickly. Physical sugary foods are said to help their mental and magic stability, often allowing them slightly faster mana regeneration than what is average if consumed when their mana-pool is either completely drained or close to it. 
-<br><br>
-<b>Hidden Wings:</b><br>
-Tribal-like wing markings cover the backs of the Sidhe-kind. These tribal markings cause various different kinds of winged silhouettes to form as an aura behind each individual Faerie when they dip into their mana pool. 
-<br><br>
-<b>Advanced Perception:</b><br>
-Their minds process actions and come up with reactions twice as fast as the average human's. (x2 mental processing speed)
-<br><br>
-<b>Twin Bonds:</b><br>
-The connection between Gossamer’s twin-born descendants is phenomenal. They are so drastically in sync with one another that their teamwork is flawless. Both twins have an almost telekinetic connection, while they can’t project fully formed thoughts or images to one another they can feel each other’s emotions. Regardless they can easily read one another’s facial expressions, and are so familiar with each other it is easy for them to guess the other’s thoughts or next actions through fairly accurate “prediction.”
-<br>
-Additionally they can feel one another’s life and health, even when separated, able to tell if life is fading from the other or they are severely injured and in extreme amounts of pain. Should one of them die the other will certainly be able to feel it.
-<br><br>
-<b>O'Connor Eyes (Plus Ultra):</b><br>
-O’Connors naturally have abnormally green eyes, a manifestation of the distinct presence of magical energy dormant within them. For these Half-Fae descendants, who are the children of magic incarnate in human form, the brightness of their emerald hues are greatly enhanced to the point of even emitting soft glows. This has little more use than aesthetic, allowing them to see just slightly better in the dark than the average person (and providing a slight weakness to extreme sudden changes in lighting).
-</div>
-<div id="tab11">
-Bloodborn
-</div>
-<div id="tab12">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/QznTUwH.jpg"/>
-</div>
-
-<div id="tab13">
-<b>Conjuration: High Duomancer</b><br>
-<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
-<br><br>
-<b>Enchantment: High Duomancer</b><br>
-<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
-</div>
-<div id="tab14">
-High Duomancer
-</div>
-<div id="tab15">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/bvFgl68.jpg"/>
-</div>
-
-<div id="tab16">
-<b>Name:</b> Vulcan O'Connor<br>
-<b>Gender:</b> Male<br>
-<b>Species:</b> Faerie<br>
-<b>Race:</b> Bloodborn Sidhe<br>
-<b>Title:</b> The Green Eyed Raven<br>
-<b>Occupation:</b> {Redacted} of Falias
-</div>
-<div id="tab17">
-Twin Brother
-</div>
-<div id="tab18">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/olkYqD5.png"/>
-</div>
-
-<div id="tab19">
-<b>Appearance:</b><br>
-The elder of the identical twins is a tall, lean, well built young man. Much like his sister he retains the same dark olive skin, pitch black hair--although his isn’t nearly as long as hers--and emerald eyes. He is taller than her, measuring in at roughly six feet exactly, and weighing closer to two hundred pounds. Most of this weight comes from thick hard muscle, which provides the accentuation his male figure requires to uphold the same idea of “perfection” his mother was “born” with and his father retains through constant training. Vulcan’s own facial structure is also fairly angular, though not nearly to the extent of Minerva’s, causing him to reflect the spitting image of his old man during his youth. Despite their differing genders and builds the twins are still very close to one another in appearance, their relation to one another as siblings is as obvious as the sun in the sky.
-<br><br>
-<b>Personality:</b><br>
-Vulcan retains very little of his mother’s behavioral tendencies, taking after his father almost exactly. He is savage, especially in battle, and can be known as a rather cruel individual. Cunning, conniving, perfectly fitting the bill for an “Unseelie” Fae while not technically possessing any Unseelie blood in his veins. This is balanced out by his fierce loyalty, especially to those close to his heart. Family is valued very highly to him, and he would do anything to keep them safe, happy, and make them proud.
-</div>
-<div id="tab20">
-Troublemaker
-</div>
-<div id="tab21">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/DE0jngw.png"/>
-</div>
-
-<div id="tab22">
 Vulcan and Minerva grew up in the adoring arms of a mother who loved them more than anything, an elder sister who wasn’t related to anyone in the family by blood but might as well have been, and a proud father who felt blessed to keep his gorgeous bride and beautiful children. Their family ties were strong, and they knew they were treasured, but that didn’t make life easy. The world of their true home--the Faerie Realms--as well as their secondary residence in the world where Ulreich University existed and operated were both riddled with conflict and war. Both parents, as well as the aforementioned elder sister, were incredibly useful battlemages who had made quite the reputation for themselves over the years. Their presence on the battlefield was in constant demand, and all parties were determined to prepare their offspring for an equally urgent and hard future. 
 <br><br>
 When Gossamer and Apollo weren’t absent from the lives of their young ones they kept to strict training regimens, developing them from an early age to assure they could take care of themselves and survive in an extremely dangerous and unfair multiverse. Even still both siblings valued these harsh sessions, seeing them as bonding opportunities with their warrior parents, and felt honored to be bestowed with years of knowledge and experience. This was not without its negative effects. The twins became incapable of functioning normally in mundane society, often resorting straight to violence in the face of conflict, prepared to deal with a climate of war and merciless killing. They found themselves isolated from human society, bringing nothing but trouble wherever they roamed within the New World … though some may argue that to be more of a good thing than a bad.
 </div>
-<div id="tab23">
-Birth & Early Life
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/q3kJPza.png"/>
 </div>
-<div id="tab24">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/n9t4nSF.png"/>
+<div id="tab7">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/4QA8XJK.png"/>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/7minZnk.png"/>
 </div>
 
-<div id="tab25">
+<div id="tab9">
+<img style="width:100%;" src="https://media.giphy.com/media/j2YnEZJf01AOShBrH1/giphy.gif"/>
+<h1>Racial Abilities</h1>
 <b>Bloodborn Sidhe:</b><br>
 Just a name referring to Faeries born half Human half Sidhe.
 <br><br>
@@ -632,25 +1436,491 @@ Additionally they can feel one another’s life and health, even when separated,
 <b>O'Connor Eyes (Plus Ultra):</b><br>
 O’Connors naturally have abnormally green eyes, a manifestation of the distinct presence of magical energy dormant within them. For these Half-Fae descendants, who are the children of magic incarnate in human form, the brightness of their emerald hues are greatly enhanced to the point of even emitting soft glows. This has little more use than aesthetic, allowing them to see just slightly better in the dark than the average person (and providing a slight weakness to extreme sudden changes in lighting).
 </div>
-<div id="tab26">
-Sidhe
+<div id="tab10">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/74ddqyO.png"/>
 </div>
-<div id="tab27">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/2SNAOcO.png"/>
+<div id="tab11">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/qsgZt8Y.png"/>
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/m1rxs9Y.png"/>
 </div>
 
-<div id="tab28">
-<b>Enchantment: High Duomancer</b><br>
+<div id="tab13">
+<h1>Conjuration: High Duomancer</h1>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+<br><br>
+<h1>Medium</h1>
+Work in progress.
+</div>
+<div id="tab14">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/5iq1tWN.png"/>
+</div>
+<div id="tab15">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/fT8kKqw.png"/>
+</div>
+<div id="tab16">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/8zMUkDu.png"/>
+</div>
+
+<div id="tab17">
+<h1>Enchantment: High Duomancer</h1>
 <i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
 <br><br>
-<b>Conjuration: High Duomancer</b><br>
-<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+<h1>Medium</h1>
+Work in progress.
+</div>
+<div id="tab18">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/qH19sFQ.png"/>
+</div>
+<div id="tab19">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/mnzvylW.png"/>
+</div>
+<div id="tab20">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/YT4DXBw.png"/>
+</div>
+
+<div id="tab21">
+<h1>Items & Tools</h1>
+Work in Progress.
+</div>
+<div id="tab22">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bwLy4g5.png"/>
+</div>
+<div id="tab23">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/V8rufxk.png"/>
+</div>
+<div id="tab24">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/7H0dSPU.png"/>
+</div>
+
+<div id="tab25">
+<h1>Appearance</h1>
+Italian heritage is very prominent in her appearance. Minerva’s complexion is a dark olive tan, which appears deeper in tone than it actually is thanks to the accent provided by long locks of pitch black hair. She bears the signature glowing emerald eyes of her O’Connor blood, causing her to take after her father a lot in appearance. The young princess’s physique is slender and athletic, hard muscle underlying soft feminine curves that are plentiful and pronounced. Angular features of high cheekbones and a fairly regal face, as well as the impressive “perfect” proportions of her body are inherited from her Firstborn Sidhe mother. She has the same long elvish-style ears as most Faerie races do, and was born with feathered-style wing birthmarks on her back that look more like tribal tattoos than natural formations. Minerva is five-feet-seven-inches tall and weighs roughly one-hundred-thirty-three pounds.
+<br><br>
+<h1>Personality</h1>
+Her temperament fluctuates as one might expect for a young growing female getting through puberty. Minerva possesses her mother’s compassionate heart and ability to see the best in other people, often making her sympathetic and soft on those clearly in need. However this hardly detracts from her nerves of steel, intimidating capacity for stubbornness and ferocity alike, as well as dangerous cunning. Sly and tactical, much like her father, though the extremes between the inherited behaviors from both parents often causes her to fluctuate from one to the other in distasteful mood swings.
+</div>
+<div id="tab26">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zC5SoIx.png"/>
+</div>
+<div id="tab27">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/bWKLQeG.png"/>
+</div>
+<div id="tab28">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/RM5v7uy.png"/>
 </div>
 <div id="tab29">
-High Duomancer
+'Lil Sister
 </div>
 <div id="tab30">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/Gjzknqh.jpg"/>
+<div id="stattitle1">
+Name:
+</div>
+<div id="stat1">
+Minerva
+</div>
+<div id="stattitle2">
+Gender:
+</div>
+<div id="stat2">
+Female
+</div>
+<div id="stattitle3">
+Species:
+</div>
+<div id="stat3">
+Faerie
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Late Teens
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+Minnie
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+Heterosexual
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Bloodborn (S)
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+125 lbs.
+</div>
+</div>
+
+<div id="tab31">
+<h1>Enchantment: High Duomancer</h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<h1>Conjuration: High Duomancer</h1>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+<br><br>
+<h1>Character Sheet Link</h1>
+For more in depth information about this character visit the account: <a target="_blank" href="http://brother.chatango.com">Brother</a>
+</div>
+<div id="tab32">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/XuM0SWG.png"/>
+</div>
+<div id="tab33">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/SB4tkNu.png"/>
+</div>
+<div id="tab34">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/9kNWrqb.png"/>
+</div>
+<div id="tab35">
+Brother
+</div>
+<div id="tab36">
+<div id="stattitle1">
+Name:
+</div>
+<div id="stat1">
+Vulcan
+</div>
+<div id="stattitle2">
+Gender:
+</div>
+<div id="stat2">
+Male
+</div>
+<div id="stattitle3">
+Species:
+</div>
+<div id="stat3">
+Faerie
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Late Teens
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+???
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+Vulk
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+???
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Bloodborn (S)
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+???
+</div>
+</div>
+
+<div id="tab37">
+<h1>Magnetism: High Duomancer</h1>
+<i>"Forcient is a tree which focuses on the physical constants and laws of the universe, and how one may manipulate these constants and laws to suit their agenda. Forcient is divided into three different branches, each of which controls a small array of forces. Magnetism, as it's name suggests, primarily focuses on the manipulation/creation of magnetic charges. A mage under this study manipulates positive and negative charges to their advantage, magnetizing objects which could not be magnetized by normal procedures. This tree may also be used to telepathically control certain metals, and even use minor electrical attacks. A mage of high ranking in this tree may even gain access to the electromagnetic spectrum, manipulating light at a very small scale." </i>
+<br><br>
+<h1>Electromancy: High Duomancer</h1>
+<i>"Often seen as the most primal or basic form of magic, Elementalists tap into one of six different elements to produce their magic. Each possesses a different mana type, and may use their spells to generate their chosen element. Electromancy is the control of electricity. Sometimes able to tap into magnetism." </i>
+<br><br>
+<h1>Character Sheet Link</h1>
+For more in depth information about this character visit the account: <a target="_blank" href="http://mutt.chatango.com">Mutt</a>
+</div>
+<div id="tab38">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/IdbNuKG.png"/>
+</div>
+<div id="tab39">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/P0mQO7o.png"/>
+</div>
+<div id="tab40">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/MVRBU79.png"/>
+</div>
+<div id="tab41">
+Big Sister
+</div>
+<div id="tab42">
+<div id="stattitle1">
+Name:
+</div>
+<div id="stat1">
+June
+</div>
+<div id="stattitle2">
+Gender:
+</div>
+<div id="stat2">
+Female
+</div>
+<div id="stattitle3">
+Species:
+</div>
+<div id="stat3">
+Faerie
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Adult
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+5'9"
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+Junebug
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+Bisexual
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Mutt (S)
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+136 lbs.
+</div>
+</div>
+
+<div id="tab43">
+<h1>Conjuration: High Auror</h1>
+<i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
+<br><br>
+<h1>Bardism: Expert Mage</h1>
+<i>"Although music is a beautiful expression of art, the proper mage may cause it to become something much more. Bard's have the ability to convert music into powerful spells, focused primarily on buffing and (slight) healing. However, at higher levels Bardism can certainly do heavy damage, with a particular strength in sound based attacks." </i>
+<br><br>
+<h1>Magnetism: Mage</h1>
+<i>"Forcient is a tree which focuses on the physical constants and laws of the universe, and how one may manipulate these constants and laws to suit their agenda. Forcient is divided into three different branches, each of which controls a small array of forces. Magnetism, as it's name suggests, primarily focuses on the manipulation/creation of magnetic charges. A mage under this study manipulates positive and negative charges to their advantage, magnetizing objects which could not be magnetized by normal procedures. This tree may also be used to telepathically control certain metals, and even use minor electrical attacks. A mage of high ranking in this tree may even gain access to the electromagnetic spectrum, manipulating light at a very small scale." </i>
+<br><br>
+<h1>Character Sheet Link</h1>
+For more in depth information about this character visit the account: <a target="_blank" href="http://groove.chatango.com">Groove</a>
+</div>
+<div id="tab44">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/ipxK1gD.png"/>
+</div>
+<div id="tab45">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/E1LF81S.png"/>
+</div>
+<div id="tab46">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/M7CmhwR.png"/>
+</div>
+<div id="tab47">
+Daddy
+</div>
+<div id="tab48">
+<div id="stattitle1">
+Name:
+</div>
+<div id="stat1">
+Apollo
+</div>
+<div id="stattitle2">
+Gender:
+</div>
+<div id="stat2">
+Male
+</div>
+<div id="stattitle3">
+Species:
+</div>
+<div id="stat3">
+Human
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Middle Aged
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+???
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+N/A
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+Heterosexual
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Italian
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+???
+</div>
+</div>
+
+<div id="tab49">
+<h1>Enchantment: High Auror</h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<h1>Stigmatism: Expert Mage</h1>
+<i>"Stigmatism is the art of creating Auras around your body based on spirits that you form a close connection to. Stigmatism auras are generally related to an animal, and take on its properties (for example, a Hawk aura would grant increased vision, and faster movement), but they can take on the form of legendary human spirits as well. Each spirit that you use to create an aura from must be attached to the physical world via items that the mage holds on their person." </i>
+<br><br>
+<h1>Photokinetics: Mage</h1>
+<i>"Users of Radiance must choose between the ultimate duality; to manipulate the light itself, or manifest their power through the darkness of shadows. Light Radiance, or Photokinesis is primarily concerned with creating bright and powerful energy based attacks, although it is possible to create more physical aspects to its magic at a higher rank. The Radiance trees can be influenced in a number of ways to provide a boon or nerf to its magic, such as bright days increasing the power of Photokinetics, and Dark nights increasing the power of Umbrakinetics." </i>
+<br><br>
+<h1>Character Sheet Link</h1>
+For more in depth information about this character visit the account: <a target="_blank" href="http://fae.chatango.com">Fae</a>
+</div>
+<div id="tab50">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/JTEghco.png"/>
+</div>
+<div id="tab51">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/ZClnI1H.png"/>
+</div>
+<div id="tab52">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/P1oKF7R.png"/>
+</div>
+<div id="tab53">
+Mommy
+</div>
+<div id="tab54">
+<div id="stattitle1">
+Name:
+</div>
+<div id="stat1">
+Gossamer
+</div>
+<div id="stattitle2">
+Gender:
+</div>
+<div id="stat2">
+Female
+</div>
+<div id="stattitle3">
+Species:
+</div>
+<div id="stat3">
+Faerie
+</div>
+<div id="stattitle4">
+P. Age:
+</div>
+<div id="stat4">
+Adult
+</div>
+<div id="stattitle5">
+Height:
+</div>
+<div id="stat5">
+5'7"
+</div>
+<div id="stattitle6">
+Petname:
+</div>
+<div id="stat6">
+Vika
+</div>
+<div id="stattitle7">
+S.O.:
+</div>
+<div id="stat7">
+Demisexual
+</div>
+<div id="stattitle8">
+Race:
+</div>
+<div id="stat8">
+Firstborn (S)
+</div>
+<div id="stattitle9">
+T. Age:
+</div>
+<div id="stat9">
+Immortal
+</div>
+<div id="stattitle10">
+Weight:
+</div>
+<div id="stat10">
+137 lbs.
+</div>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Minerva.mp3" autostart="true" loop="true">
+</html>
